@@ -1,4 +1,4 @@
-~Create a gym clothing store database 
+-- Create a gym clothing store database 
 
 CREATE TABLE gym_clothing (id INTEGER PRIMARY KEY, name TEXT, section TEXT, price INTEGER, sold INTEGER); 
 
@@ -18,11 +18,11 @@ INSERT INTO gym_clothing VALUES (13, "Cotton Shorts", "BOTTOMS", 27.25, 12);
 INSERT INTO gym_clothing VALUES (14, "Straps", "ACCESSORIES", 25, 11);
 INSERT INTO gym_clothing VALUES (15, "Compression Tees", "TOPS", 21.25, 9);
 
-~display database ordered by price.
+-- display database ordered by price.
 SELECT * FROM gym_clothing
 ORDER BY price desc
 
-~what are the top 5 sold items?
+-- what are the top 5 sold items?
 SELECT item, price, sold 
 FROM gym_clothing 
 ORDER BY sold desc 
